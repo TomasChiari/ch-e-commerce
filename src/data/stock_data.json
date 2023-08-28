@@ -1,0 +1,21 @@
+[
+    {"id":1,"name":"Mellicent","gender":"Trans","size":"XL","stock":7,"price":10830},
+
+    {"id":2,"name":"Gabbey","gender":"Androgynous","size":"XL","stock":16,"price":5441},
+    
+    {"id":4,"name":"Pearce","gender":"Trans","size":"2XL","stock":19,"price":10881},
+
+    {"id":5,"name":"Keven","gender":"Female to Male","size":"M","stock":19,"price":14392},
+
+    {"id":6,"name":"Wells","gender":"Gender Questioning","size":"S","stock":7,"price":13504},
+
+    {"id":7,"name":"Deena","gender":"Gender Variant","size":"L","stock":18,"price":18491},
+
+    {"id":8,"name":"Elsy","gender":"Transgender Person","size":"3XL","stock":16,"price":5212},
+
+    {"id":3,"name":"Kelly","gender":"Cisgender Female","size":"2XL","stock":15,"price":4236},
+
+    {"id":9,"name":"Gregoire","gender":"Trans Person","size":"2XL","stock":12,"price":7875},
+
+    {"id":10,"name":"Fremont","gender":"Female to Male","size":"XS","stock":11,"price":9162}
+]

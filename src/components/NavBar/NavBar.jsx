@@ -11,7 +11,6 @@ const NavBar = () => {
                     <span className="brand-name">RoboCloth</span>
                 </section>
                 <section className="pages">
-
                 </section>
                 <section className="cart">
                     <CartWidget/>
