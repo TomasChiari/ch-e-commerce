@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Audiowide';
+    src: local('Audiowide'), url(../../fonts/Audiowide-Regular.ttf) format('truetype');
+}
+
+nav {
+    height: 80px;
+
+    background-color: #252525;
+    color: white;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.brand {
+    margin: 0 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.brand .brand-logo {
+    width: 60px;
+}
+
+.brand .brand-name {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    font-family: 'Audiowide';
+    font-size: 40px;
+    font-weight: 400;   
+}

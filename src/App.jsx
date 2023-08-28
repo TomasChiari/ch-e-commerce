@@ -1,5 +1,7 @@
-import NavBar from "./components/NavBar.jsx";
-import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
+
+import "./app.css"
 
 export const App = () => {
     return (
