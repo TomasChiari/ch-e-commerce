@@ -1,21 +1,21 @@
 [
-    {"id":1,"name":"Mellicent","gender":"Trans","size":"XL","stock":7,"price":10830},
+    {"id":1,"name":"Abbi","category":"remera","gender":"F","size":"L","stock":17,"price":15244},
 
-    {"id":2,"name":"Gabbey","gender":"Androgynous","size":"XL","stock":16,"price":5441},
+    {"id":2,"name":"Page","category":"campera","gender":"M","size":"3XL","stock":2,"price":9541},
+
+    {"id":3,"name":"Anthony","category":"remera","gender":"M","size":"S","stock":3,"price":15953},
+
+    {"id":4,"name":"Whitby","category":"remera","gender":"M","size":"XS","stock":5,"price":3021},
+
+    {"id":5,"name":"Katinka","category":"campera","gender":"F","size":"M","stock":4,"price":11657},
+
+    {"id":6,"name":"Ginnifer","category":"remera","gender":"F","size":"3XL","stock":5,"price":4956},
+
+    {"id":7,"name":"Marietta","category":"zapatillas","gender":"M","size":"M","stock":6,"price":11682},
+
+    {"id":8,"name":"Michel","category":"jogger","gender":"M","size":"L","stock":15,"price":16564},
+
+    {"id":9,"name":"Aguistin","category":"zapatillas","gender":"M","size":"S","stock":19,"price":16401},
     
-    {"id":4,"name":"Pearce","gender":"Trans","size":"2XL","stock":19,"price":10881},
-
-    {"id":5,"name":"Keven","gender":"Female to Male","size":"M","stock":19,"price":14392},
-
-    {"id":6,"name":"Wells","gender":"Gender Questioning","size":"S","stock":7,"price":13504},
-
-    {"id":7,"name":"Deena","gender":"Gender Variant","size":"L","stock":18,"price":18491},
-
-    {"id":8,"name":"Elsy","gender":"Transgender Person","size":"3XL","stock":16,"price":5212},
-
-    {"id":3,"name":"Kelly","gender":"Cisgender Female","size":"2XL","stock":15,"price":4236},
-
-    {"id":9,"name":"Gregoire","gender":"Trans Person","size":"2XL","stock":12,"price":7875},
-
-    {"id":10,"name":"Fremont","gender":"Female to Male","size":"XS","stock":11,"price":9162}
+    {"id":10,"name":"Ami","category":"jogger","gender":"F","size":"XS","stock":2,"price":6275}
 ]

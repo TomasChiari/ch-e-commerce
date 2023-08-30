@@ -1,0 +1,51 @@
+.container {
+    width: 250px;
+    height: 35px;
+
+    border-radius: 5px;
+    background-color: #aaa;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+}
+
+.counter-button, .add-button {padding: 1px 2px 0px 2px;}
+
+.counter-value {
+    width: 35px;
+    padding-top: 2px; 
+
+    display: flex;
+    justify-content: center;
+}
+
+.container .counter { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.container .counter .counter-button {
+    background-color: #22ac16;
+    color: #eee;
+
+    border-radius: 3px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.add-button {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
