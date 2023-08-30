@@ -1,0 +1,31 @@
+.card {
+    width: 350px;
+    height: 200px;
+    
+    border: 1px solid #666;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.card div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.card .description {
+    gap: 10px;
+}
+
+.card .shopping {
+    flex-direction: column;
+    gap: 5px;
+}

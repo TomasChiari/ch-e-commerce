@@ -19,6 +19,10 @@ const ItemCount = ({initial, stock}) => {
         }
     }
 
+    const addCart = () => {
+        alert(`Se an agregado ${counter} producto/s al carrito`)
+    }
+
     return(
         <>
             <div className="container">
@@ -29,7 +33,7 @@ const ItemCount = ({initial, stock}) => {
                 </div>
 
                 <div className="add">
-                    <button className="add-button">Añadir</button>   
+                    <button className="add-button" onClick={addCart}>Añadir</button>   
                 </div>
             </div>
         </>

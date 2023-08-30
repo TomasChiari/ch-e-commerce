@@ -1,21 +1,22 @@
 [
-    {"id":1,"name":"Abbi","category":"remera","gender":"F","size":"L","stock":17,"price":15244},
+    {"id":1,"name":"Remera MR. Robot","category":"remera","gender":"F","size":"L","stock":17,"price":15244},
 
-    {"id":2,"name":"Page","category":"campera","gender":"M","size":"3XL","stock":2,"price":9541},
+    {"id":2,"name":"Campera Puffer","category":"campera","gender":"M","size":"3XL","stock":2,"price":9541},
 
-    {"id":3,"name":"Anthony","category":"remera","gender":"M","size":"S","stock":3,"price":15953},
+    {"id":3,"name":"Remera Bot","category":"remera","gender":"M","size":"S","stock":3,"price":15953},
 
-    {"id":4,"name":"Whitby","category":"remera","gender":"M","size":"XS","stock":5,"price":3021},
+    {"id":4,"name":"Remera Optimus","category":"remera","gender":"M","size":"XS","stock":5,"price":3021},
 
-    {"id":5,"name":"Katinka","category":"campera","gender":"F","size":"M","stock":4,"price":11657},
+    {"id":5,"name":"Campera Cyberpunk","category":"campera","gender":"F","size":"M","stock":4,"price":11657},
 
-    {"id":6,"name":"Ginnifer","category":"remera","gender":"F","size":"3XL","stock":5,"price":4956},
+    {"id":6,"name":"Remera Wall-E","category":"remera","gender":"F","size":"3XL","stock":5,"price":4956},
 
-    {"id":7,"name":"Marietta","category":"zapatillas","gender":"M","size":"M","stock":6,"price":11682},
+    {"id":7,"name":"Zapatillas EVA-01","category":"zapatillas","gender":"M","size":"M","stock":6,"price":11682},
 
-    {"id":8,"name":"Michel","category":"jogger","gender":"M","size":"L","stock":15,"price":16564},
+    {"id":8,"name":"Jogger Iron Man","category":"jogger","gender":"M","size":"L","stock":15,"price":16564},
 
-    {"id":9,"name":"Aguistin","category":"zapatillas","gender":"M","size":"S","stock":19,"price":16401},
+    {"id":9,"name":"Nike Vapormax Evo","category":"zapatillas","gender":"M","size":"S","stock":19,"price":16401},
     
-    {"id":10,"name":"Ami","category":"jogger","gender":"F","size":"XS","stock":2,"price":6275}
+    {"id":10,"name":"Jogger Bumble Bee","category":"jogger","gender":"F","size":"XS","stock":2,"price":6275}
 ]
+

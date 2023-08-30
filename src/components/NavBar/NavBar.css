@@ -48,3 +48,7 @@ section {
     font-size: 40px;
     font-weight: 400;   
 }
+
+.pages {
+    gap: 20px;
+}

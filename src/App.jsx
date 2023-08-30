@@ -1,6 +1,8 @@
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+
 import NavBar from "./components/NavBar/NavBar.jsx";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
-import ItemCount from "./components/ItemCount/ItemCount.jsx";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer.jsx";
 
 import "./app.css"
 
@@ -8,8 +10,18 @@ import "./app.css"
 export const App = () => {
     return (
         <>
-            <NavBar/>
-            <ItemListContainer/>
+            <BrowserRouter>
+                <NavBar/>
+                <Routes>
+                    
+                    <Route path="/" element={<ItemListContainer/>}/>
+
+                    <Route path="/category/:id" element={<ItemListContainer/>}/>
+                    
+                    <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+
+                </Routes>
+            </BrowserRouter>
         </>
     );
 }
