@@ -8,8 +8,11 @@ const NavBar = () => {
         <header>
             <nav>
                 <section className="brand">
-                    <img className="brand-logo" src={Logo} alt="logo" />
-                    <span className="brand-name">RoboCloth</span>
+                    <NavLink className="brand">
+                        <img className="brand-logo" src={Logo} alt="logo" />
+                        <span className="brand-name">RoboCloth</span>
+                    </NavLink>
+                    
                 </section>
                 <section className="pages">
                     <NavLink to="/category/remera">Remeras</NavLink>

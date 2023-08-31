@@ -11,6 +11,8 @@ const ItemListContainer = () => {
 
     const {id} = useParams();
 
+    console.log(id)
+
     useEffect(() => {
         const promise = new Promise((res) => {
             setTimeout(() => res(data), 2000)
@@ -21,7 +23,7 @@ const ItemListContainer = () => {
                 setProducts(dat)
             }
             else {
-                const filter = data.filter(
+                const filter = dat.filter(
                     (product) => product.category === id
                 )
                 setProducts(filter)
