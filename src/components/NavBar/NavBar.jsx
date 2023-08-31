@@ -8,7 +8,7 @@ const NavBar = () => {
         <header>
             <nav>
                 <section className="brand">
-                    <NavLink className="brand">
+                    <NavLink to="/" className="brand">
                         <img className="brand-logo" src={Logo} alt="logo" />
                         <span className="brand-name">RoboCloth</span>
                     </NavLink>
