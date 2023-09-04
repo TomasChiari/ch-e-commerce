@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
         })
 
         promise.then(dat => setProduct(dat))
-    }, [])
+    }, [id])
 
     return (
         <div className="main-container">

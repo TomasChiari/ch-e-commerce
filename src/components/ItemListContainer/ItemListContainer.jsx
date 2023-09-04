@@ -29,7 +29,7 @@ const ItemListContainer = () => {
                 setProducts(filter)
             }
         })
-    }, [])
+    }, [id])
 
     return (
         <div className="main-container">
