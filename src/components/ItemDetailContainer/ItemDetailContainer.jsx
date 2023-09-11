@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
             setTimeout(() => {
                 const prodId = data.find((product) => product.id === id);
                 res(prodId);
-            }, 2000)
+            }, 500)
         })
 
         promise.then(dat => setProduct(dat))

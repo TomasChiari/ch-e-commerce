@@ -24,3 +24,18 @@
 .cardDetail .descriptionDetail {
     gap: 5px;
 }
+
+.added {
+    width: 250px;
+    height: 35px;
+
+    border-radius: 5px;
+    background-color: #aaa;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+
+    font-size: 14px;
+}

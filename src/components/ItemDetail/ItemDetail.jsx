@@ -1,7 +1,16 @@
+import { useState } from "react"
 import ItemCount from "../ItemCount/ItemCount.jsx"
 import "./ItemDetail.css"
 
 const ItemDetail = ({product}) => {
+
+    const [count, setCount] = useState(0);
+
+    const onAdd = (count) => {
+        setCount(count);
+        setTimeout(() => {console.log(count)}, 1000)
+    }
+
     return(
         <>
             <div className="cardDetail">
@@ -14,7 +23,7 @@ const ItemDetail = ({product}) => {
                 </div>
                 <div className="ShoppingDetail">
                     <span className="priceDetail"></span>
-                    <ItemCount initial={1} stock={product.stock}/>
+                    {!count?<ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>:<span className="added">Producto Añadido</span>}
 
                 </div>
             </div>

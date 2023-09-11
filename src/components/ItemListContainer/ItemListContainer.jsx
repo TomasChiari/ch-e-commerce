@@ -11,11 +11,9 @@ const ItemListContainer = () => {
 
     const {id} = useParams();
 
-    console.log(id)
-
     useEffect(() => {
         const promise = new Promise((res) => {
-            setTimeout(() => res(data), 2000)
+            setTimeout(() => res(data), 500)
         })
 
         promise.then(dat => {
