@@ -1,32 +1,28 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
-import data from "../../data/stock_data.json";
 import "./ItemListContainer.css"
-
+import { getFirestore, getDocs, collection, query, where} from 'firebase/firestore'
 
 const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
-
     const {id} = useParams();
 
-    useEffect(() => {
-        const promise = new Promise((res) => {
-            setTimeout(() => res(data), 500)
-        })
+    useEffect(()=> {
+        const db = getFirestore()
 
-        promise.then(dat => {
-            if (!id) {
-                setProducts(dat)
-            }
-            else {
-                const filter = dat.filter(
-                    (product) => product.category === id
-                )
-                setProducts(filter)
-            }
-        })
+        const refCollection = id ? query(collection(db, "ItemCollection"), where("category", "==", id)) : collection(db, "ItemCollection")
+
+        getDocs(refCollection)
+            .then(resp => {
+                if (resp.size === 0) {
+                    console.log('error, sin resultados')
+                }
+                else {
+                    setProducts(resp.docs.map(doc => {return { id: doc.id, ...doc.data()}}))
+                }
+            })        
     }, [id])
 
     return (

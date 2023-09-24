@@ -1,15 +1,14 @@
-import { useState } from "react"
+import { useContext} from "react"
 import ItemCount from "../ItemCount/ItemCount.jsx"
 import "./ItemDetail.css"
+import { CartContext } from "../../contexts/CartContext/CartContext.jsx";
+
 
 const ItemDetail = ({product}) => {
 
-    const [count, setCount] = useState(0);
+    const { addToCart } = useContext(CartContext);
 
-    const onAdd = (count) => {
-        setCount(count);
-        setTimeout(() => {console.log(count)}, 1000)
-    }
+    const onAdd = count => addToCart(product, count)
 
     return(
         <>
@@ -23,7 +22,8 @@ const ItemDetail = ({product}) => {
                 </div>
                 <div className="ShoppingDetail">
                     <span className="priceDetail"></span>
-                    {!count?<ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>:<span className="added">Producto Añadido</span>}
+                    {/* {!items?<ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>:<span className="added">Producto Añadido</span>} */}
+                    <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
 
                 </div>
             </div>

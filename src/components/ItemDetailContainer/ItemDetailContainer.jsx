@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../ItemDetail/ItemDetail.jsx"
-import data from "../../data/stock_data.json";
 import "./ItemDetailContainer.css"
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
+import { getFirestore, getDocs, doc} from 'firebase/firestore'
+
 
 
 const ItemDetailContainer = () => {
@@ -12,15 +13,15 @@ const ItemDetailContainer = () => {
 
     const { id } = useParams();
 
-    useEffect(() => {
-        const promise = new Promise((res) => {
-            setTimeout(() => {
-                const prodId = data.find((product) => product.id === id);
-                res(prodId);
-            }, 500)
-        })
+    useEffect(()=> {
+        const db = getFirestore()
 
-        promise.then(dat => setProduct(dat))
+        const refDoc = doc(db, "ItemCollection", id)
+
+        getDocs(refDoc)
+            .then(resp => {
+                setProduct({ id: resp.id, ...resp.data(), })
+            })       
     }, [id])
 
     return (
