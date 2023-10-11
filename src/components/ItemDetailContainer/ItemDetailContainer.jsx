@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "../ItemDetail/ItemDetail.jsx"
 import "./ItemDetailContainer.css"
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
-import { getFirestore, getDocs, doc} from 'firebase/firestore'
+import { getFirestore, getDoc, doc} from 'firebase/firestore'
 
 
 
@@ -18,9 +18,10 @@ const ItemDetailContainer = () => {
 
         const refDoc = doc(db, "ItemCollection", id)
 
-        getDocs(refDoc)
+
+        getDoc(refDoc)
             .then(resp => {
-                setProduct({ id: resp.id, ...resp.data(), })
+                setProduct({ id: resp.id, ...resp.data() })
             })       
     }, [id])
 

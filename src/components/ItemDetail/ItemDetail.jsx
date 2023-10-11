@@ -6,7 +6,10 @@ import { CartContext } from "../../contexts/CartContext/CartContext.jsx";
 
 const ItemDetail = ({product}) => {
 
-    const { addToCart } = useContext(CartContext);
+    const { cartList, addToCart } = useContext(CartContext);
+
+    const itemInCart = cartList.filter(item => item.name === product.name )
+    const availableStock =  itemInCart == 0 ? product.stock : product.stock - itemInCart[0].quantity
 
     const onAdd = count => addToCart(product, count)
 
@@ -21,9 +24,8 @@ const ItemDetail = ({product}) => {
                     <span className="sizeDetail">Talle:{product.size}</span>
                 </div>
                 <div className="ShoppingDetail">
-                    <span className="priceDetail"></span>
-                    {/* {!items?<ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>:<span className="added">Producto Añadido</span>} */}
-                    <ItemCount initial={1} stock={product.stock} onAdd={onAdd}/>
+                    <span className="priceDetail">${product.price}</span>
+                    <ItemCount initial={1} stock={availableStock} onAdd={onAdd}/>
 
                 </div>
             </div>

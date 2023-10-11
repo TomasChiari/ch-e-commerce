@@ -1,0 +1,39 @@
+form {
+    margin: 30px auto;
+    padding: 20px;
+    width: 80vw;
+
+    background-color: #eeeeee;
+
+    border: 1px solid #666;
+    border-radius: 20px;
+
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+input {
+    padding: 4px;
+}
+
+.cont {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.orderButton {
+    margin: 0 auto;
+    width: 30vw;
+    padding: 4px;
+
+    background-color: #22ac16;
+    font-weight: bold;
+    color: #eee;
+}

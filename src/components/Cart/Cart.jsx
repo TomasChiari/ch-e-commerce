@@ -12,7 +12,7 @@ export const Cart = () => {
         <div className="cartContainer">
             <h1 className="tittle">Cart</h1>
             {cartList.length === 0?
-            <div>No hay prendas en el carrito. vuelva a la <Link to="/">Tienda</Link></div>: 
+            <div>No hay prendas en el carrito. vuelva a la <Link to="/">Tienda</Link></div>:<>
             <Table striped bordered hover variant="dark">
                 <thead>
                     <tr>
@@ -27,15 +27,22 @@ export const Cart = () => {
                         <tr key={item.id}>
                             <td>{item.name}</td>
                             <td>{item.quantity}</td>
-                            <td>{item.price}</td>
+                            <td>{item.price * item.quantity}</td>
                             <td><button onClick={() => {deleteItem(item.id)}}>Quitar</button></td>
                         </tr>
                     ))}
-                    <tr>Total a pagar</tr>
-                    <tr>totalPrice</tr>
-                    <tr><Link to='/Checkout'>Terminar compra</Link></tr>
+
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>Total a pagar</td>
+                        <td>{totalPrice}</td>
+                        <td COLSPAN="2"><Link to='/Checkout'>Terminar compra</Link></td>
+                    </tr>
                 </tbody>
             </Table>
+            <button className="removeList"onClick={removeList}>Borrar Carrito</button>
+            </>
             }
         </div>
     )
